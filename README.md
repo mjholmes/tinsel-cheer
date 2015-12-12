@@ -11,11 +11,15 @@ If I was to buy components to build this I'd get some WS2811/WS2812/WS2812B base
 Connections are as follows:
 
 Photon pin | LED String
------------------------
+-----------|-----------
 A3         | Data
 A5         | Clock
 Vin        | +Ve
 Gnd        | -Ve
+
+There's a large capacitor between Vin and Gnd to prevent and large current inrush from damaging the LEDs, i think it was a 2200uF 6.3v electrolytic.
+
+*Do not try and power the Photon and LEDs from USB, the power requirements for something in the order of 3-4Amps! Instead, power the LED string from a suitably rated 5v power supply and power the Photon from the same supply.* LED strings like these tend to have power connections at both ends so you can connect the Photon at one end (the end with Data In) and a power supply at the other end.
 
 ## Software
 
