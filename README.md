@@ -25,4 +25,4 @@ There's a large capacitor between Vin and Gnd to prevent and large current inrus
 
 Getting a reliable WS2801 driver that compiles in Particle's Web IDE was a challenge. A [gist from technobly on github](https://gist.github.com/technobly/8339548) did the trick and was modified to add the ThingSpeak library to talk to github and "walk" the latest colour down the string of 50 LEDs.
 
-There is an additional "colour" supported by this code called "xmas" which turns the LED string into alternating red, green, blue and yellow lights to resemble a classic set of Christmas lights.
+There is an additional "colour" supported by this code called `xmas` which changes the LED string colours into alternating red, green, blue and yellow to resemble a classic set of Christmas lights.
